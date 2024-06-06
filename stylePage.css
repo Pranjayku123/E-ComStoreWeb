@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Poppins;
+}
+body{
+    background-color: #3c3c3c !important;
+}   
+.mainPageWrapper{
+    height: 100%;
+    width: 100%;
+    position: relative; 
+    color: #000;
+    padding: 6px;
+    text-decoration: none;
+}
+.mainPageWrapper ul li{
+    list-style-type: none;
+}
+.mainPageWrapper .customHeaderSecMain {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    background-color: #3c3c3c;
+    color: #f0f0f0; 
+    border-bottom: 1px solid #ddd;
+    z-index: 9;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass ul{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-right: 30px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass ul li img{
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass .search{
+    width: 30%;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass .search input{
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 4px;
+    width: 100%; 
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass .search input:active{
+    border: 1px solid #000 !important;
+    border-radius: 6px;
+    padding: 4px;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass .logo .logoFont{
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass .logo .logoFont span:first-child{
+    color: #ffa659;
+}
+.mainPageWrapper .customHeaderSecMain .navbarMainClass .logo .logoFont span:last-child{
+    color:#fc4bb9
+}
+.mainPageWrapper .contectSecMain .dataAppendHere{
+    display: grid;
+    grid-template-columns: repeat(4, auto );
+}
+.mainPageWrapper .contectSecMain .dataAppendHere .productShowCard{
+    margin: 10px;
+    align-items: center;
+}
+.mainPageWrapper .contectSecMain .dataAppendHere .productShowCard .titleCustomClass{
+    width: 100%;
+    background-color: #eadfed;
+    font-size: 14px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.mainPageWrapper .contectSecMain .dataAppendHere .productShowCard .chooseBtn{
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 50px;
+    border: 1px solid #000;
+    margin: 4px;
+    text-align: center;
+    transition: ease-in-out 30ms;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+/* .mainPageWrapper .contectSecMain .dataAppendHere .productShowCard .chooseBtn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #2e65cc;
+    transition: left 0.4s;
+} */
+/* .mainPageWrapper .contectSecMain .dataAppendHere .productShowCard .chooseBtn:hover::before{
+    left: 0;
+} */
+.mainPageWrapper .contectSecMain .dataAppendHere .productShowCard .chooseBtn:hover{
+    border: 2px solid #000;
+    cursor: pointer; 
+}
+.mainPageWrapper .contectSecMain .dataAppendHere .productShowCard img:hover{
+    transform: scale(1.10);
+    transition: ease-in-out 300ms; 
+}
